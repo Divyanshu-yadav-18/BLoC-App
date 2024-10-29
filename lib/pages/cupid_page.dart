@@ -16,14 +16,14 @@ class NameCubit extends Cubit<String?> {
       );
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class CupidPage extends StatefulWidget {
+  const CupidPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<CupidPage> createState() => _CupidPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _CupidPageState extends State<CupidPage> {
   late final NameCubit cubit;
 
   @override

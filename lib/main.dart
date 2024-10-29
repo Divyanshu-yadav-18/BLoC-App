@@ -1,4 +1,4 @@
-import 'package:bloc_app/pages/home_page.dart';
+import 'package:bloc_app/pages/cupid_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +14,6 @@ class MainApp extends StatelessWidget {
         title: "Flutter app",
         theme: ThemeData(primarySwatch: Colors.cyan),
         debugShowCheckedModeBanner: false,
-        home: const HomePage());
+        home: const CupidPage());
   }
 }
