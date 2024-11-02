@@ -1,4 +1,6 @@
-import 'package:bloc_app/pages/cupid_page.dart';
+import 'package:bloc_app/pages/bloc_page.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +16,7 @@ class MainApp extends StatelessWidget {
         title: "Flutter app",
         theme: ThemeData(primarySwatch: Colors.cyan),
         debugShowCheckedModeBanner: false,
-        home: const CupidPage());
+        home: BlocProvider(
+            create: (_) => PersonsBloc(), child: const HomePage()));
   }
 }
